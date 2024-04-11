@@ -5,8 +5,6 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import type { User } from '@/app/lib/definitions';
 import bcrypt from 'bcrypt';
-// import Auth from "@auth/core"
-// import Google from "@auth/core/providers/google"
 
 
 async function getUser(email: string): Promise<User | undefined> {
