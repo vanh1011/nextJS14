@@ -5,8 +5,7 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import type { User } from '@/app/lib/definitions';
 import bcrypt from 'bcrypt';
-// import Auth from "@auth/core"
-// import Google from "@auth/core/providers/google"
+
 
 
 async function getUser(email: string): Promise<User | undefined> {
@@ -19,8 +18,6 @@ async function getUser(email: string): Promise<User | undefined> {
     }
 }
 
-// Email: user@nextmail.com
-// Password: 123456
 
 export const { auth, signIn, signOut } = NextAuth({
     ...authConfig,
