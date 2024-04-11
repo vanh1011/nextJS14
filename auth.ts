@@ -19,6 +19,9 @@ async function getUser(email: string): Promise<User | undefined> {
     }
 }
 
+// Email: user@nextmail.com
+// Password: 123456
+
 export const { auth, signIn, signOut } = NextAuth({
     ...authConfig,
     providers: [
